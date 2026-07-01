@@ -19,7 +19,15 @@ public sealed class LayoutOption
     /// دنده انتخاب شده
     /// </summary>
     public required Gear Gear { get; init; }
+/// <summary>
+/// شماره دنده
+/// </summary>
+public int GearNumber => Gear.Number;
 
+/// <summary>
+/// محیط واقعی سیلندر (Repeat) بر حسب میلی‌متر
+/// </summary>
+public decimal RepeatLength => Gear.Circumference;
     /// <summary>
     /// جهت قرارگیری لیبل
     /// </summary>
